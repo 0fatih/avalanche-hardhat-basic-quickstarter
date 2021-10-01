@@ -14,17 +14,22 @@ yarn install
 
 # Usage
 
-You can use all of the avalanche networks with these commands:
+If you didn't change anything, you have a Greeter contract in your contracts. You can deploy it to with our deployment commands. 
 
-For avash:
+But you probably want to deploy your contract. For this, go to `contracts` and write your contract. After that, rename your contract in `scripts/deploy.js`. Don't forget to change your constructor paramaters.
+
+
+Our deployment commands:
+
+For avash
 ```
 npx hardhat run scripts/deploy.js --network local
 ```
-For fuji network:
+For fuji network
 ```
 npx hardhat run scripts/deploy.js --network fuji
 ```
-For main network:
+For main network
 ```
 npx hardhat run scripts/deploy.js --network mainnet
 ```

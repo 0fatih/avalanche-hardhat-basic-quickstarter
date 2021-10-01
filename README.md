@@ -36,7 +36,7 @@ npx hardhat run scripts/deploy.js --network mainnet
 
 # More
 
-This repo not for [hardhat][https://hardhat.org/] tutorial. You can learn more about [here][https://hardhat.org/getting-started/].
+This repo not for [hardhat](https://hardhat.org/) tutorial. You can learn more about [here](https://hardhat.org/getting-started/).
 
 But I wanted to share something for beginners at least enough to be able to run their own contracts.
 

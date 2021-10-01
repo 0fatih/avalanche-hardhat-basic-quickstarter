@@ -2,7 +2,7 @@
 
 Clone the repo with:
 ```
-git clone https://github.com/0fatih/avalanche-hardhat-starter-kit.git
+git clone https://github.com/0fatih/avalanche-hardhat-basic-quickstarter.git 
 ```
 
 Install node packages:

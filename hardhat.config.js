@@ -1,19 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
 
-// When using the hardhat network, you may choose to fork Fuji or Avalanche Mainnet
-// This will allow you to debug contracts using the hardhat network while keeping the current network state
-// To enable forking, turn one of these booleans on, and then run your tasks/scripts using ``--network hardhat``
-// For more information go to the hardhat guide
-// https://hardhat.org/hardhat-network/
-// https://hardhat.org/guides/mainnet-forking.html
-const FORK_FUJI = false
-const FORK_MAINNET = false
-const forkingData = FORK_FUJI ? {
-  url: 'https://api.avax-test.network/ext/bc/C/rpc',
-} : FORK_MAINNET ? {
-  url: 'https://api.avax.network/ext/bc/C/rpc'
-} : undefined
-
 module.exports = {
   solidity: {
     compilers: [
@@ -23,11 +9,6 @@ module.exports = {
     ]
   },
   networks: {
-    hardhat: {
-      gasPrice: 225000000000,
-      chainId: !forkingData ? 43112 : undefined, //Only specify a chainId if we are not forking
-      forking: forkingData
-    },
     local: {
       url: 'http://localhost:9650/ext/bc/C/rpc',
       gasPrice: 225000000000,

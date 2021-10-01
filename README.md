@@ -18,6 +18,16 @@ If you didn't change anything, you have a Greeter contract in your contracts. Yo
 
 But you probably want to deploy your contract. For this, go to `contracts` and write your contract. After that, rename your contract in `scripts/deploy.js`. Don't forget to change your constructor paramaters.
 
+If you'll use fuji or mainnet, don't forget to add your private key to accounts list in `hardhat.config.js`. For example if you wan't to deploy your contract to fuji, your fuji network configs should be like:
+
+```
+fuji: {
+      url: 'https://api.avax-test.network/ext/bc/C/rpc',
+      gasPrice: 225000000000,
+      chainId: 43113,
+      accounts: ["0x56289e99c94b6912bfc12adc093c9b51124f0dc54ac7a766b2bc5ccf558d8027"]
+    },
+```
 
 Our deployment commands:
 

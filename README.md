@@ -1,15 +1,30 @@
-# Basic Sample Hardhat Project
+# Installation
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Clone the repo with:
+```
+git clone https://github.com/0fatih/avalanche-hardhat-starter-kit.git
+```
 
-Try running some of the following tasks:
+Install node packages:
+```
+npm i
+// or
+yarn install
+```
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+# Usage
+
+You can use all of the avalanche networks with these commands:
+
+For avash:
+```
+npx hardhat run scripts/deploy.js --network local
+```
+For fuji network:
+```
+npx hardhat run scripts/deploy.js --network fuji
+```
+For main network:
+```
+npx hardhat run scripts/deploy.js --network mainnet
 ```
